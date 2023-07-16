@@ -1,0 +1,52 @@
+{
+  "user": [
+    { "id": "4013c746-2bbf-42e7-9c41-bf20b7a43263", "username": "cborrerol", "password": "ABCD1234", "enabled":true },
+    { "id": "86404ea6-c508-4dab-b60b-0c8a652722bb", "username": "sortiza", "password": "ABCD1234", "enabled":true },
+    { "id": "bfffdb6b-102b-4e29-9e97-4f8ec0f19bcb", "username": "lulito", "password": "ABCD1234", "enabled":false },
+    { "id": "8296981c-e657-4b69-b976-79de6ee33806", "username": "donna", "password": "ABCD1234", "enabled":true },
+    { "id": "6398f79c-c1fd-47eb-b5e0-e6cbbabb23a8", "username": "deshabilitado", "password": "ABCD1234", "enabled":false },
+    { "id": "07725ed8-20f8-4f7b-91b6-b2e63be34afc", "username": "unregistered", "password": "ABCD1234", "enabled":true }
+  ],
+
+  "role": [
+    { "id": "1", "name": "ADMIN" },
+    { "id": "2", "name": "SENDER" },
+    { "id": "3", "name": "RECEIVER" }
+  ],
+
+  "user-role": [
+    { "id": 1, "userId": "4013c746-2bbf-42e7-9c41-bf20b7a43263", "roleId": "1" },
+    { "id": 2, "userId": "86404ea6-c508-4dab-b60b-0c8a652722bb", "roleId": "2"  },
+    { "id": 3, "userId": "bfffdb6b-102b-4e29-9e97-4f8ec0f19bcb", "roleId": "3"  }
+  ],
+
+  "delivery":[
+    {"id": "f6c6ee33-c805-469d-b2fe-02938b0e809e", "userId":"86404ea6-c508-4dab-b60b-0c8a652722bb" ,
+    "origin":"Calle San Juan", "originLat":3.414561, "originLong":-76.503228,
+    "destination": "Calle San Pedro", "destinationLat": 4.576364, "destinationLong":-74.201579, "datetime": "2023-07-14T18:25:43.511Z",
+    "statusDeliveryId": 1
+    }
+  ],
+
+  "coordenates": [
+    { "id":1, "deliveryId": "f6c6ee33-c805-469d-b2fe-02938b0e809e", "latitude": 3.414561, "longitude":-76.503228, "datetime": "2023-07-14T18:25:43.511Z" }
+  ],
+
+  "status-delivery": [
+    {"id":1 , "name": "Saliendo de Origen"},
+    {"id":2 , "name": "Entregado a Destino"},
+    {"id":3 , "name": "En tránsito"},
+    {"id":4 , "name": "Pendiente"}
+  ],
+
+
+
+
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
