@@ -11,32 +11,38 @@
   "role": [
     { "id": "1", "name": "ADMIN" },
     { "id": "2", "name": "SENDER" },
-    { "id": "3", "name": "RECEIVER" }
+    { "id": "3", "name": "TRANSPORTER" },
+    { "id": "4", "name": "MANAGER" },
+    { "id": "5", "name": "TELLER" }
   ],
 
   "user-role": [
-    { "id": 1, "userId": "4013c746-2bbf-42e7-9c41-bf20b7a43263", "roleId": "1" },
-    { "id": 2, "userId": "86404ea6-c508-4dab-b60b-0c8a652722bb", "roleId": "2"  },
-    { "id": 3, "userId": "bfffdb6b-102b-4e29-9e97-4f8ec0f19bcb", "roleId": "3"  }
+    { "id": "cca552ff-3316-4689-a204-61493ea12428", "userId": "4013c746-2bbf-42e7-9c41-bf20b7a43263", "roleId": "1" },
+    { "id": "65bfadba-b6df-4609-ac1d-27bdca8228e4", "userId": "86404ea6-c508-4dab-b60b-0c8a652722bb", "roleId": "2"  },
+    { "id": "d23ee364-ac9b-4c00-a48e-e12cc136aea4", "userId": "bfffdb6b-102b-4e29-9e97-4f8ec0f19bcb", "roleId": "3"  },
+    { "id": "604569b0-5351-4340-a23a-00022a2a6d95", "userId": "8296981c-e657-4b69-b976-79de6ee33806", "roleId": "4" },
+    { "id": "610b06da-f5e6-4a50-860a-cef8f5c457a7", "userId": "6398f79c-c1fd-47eb-b5e0-e6cbbabb23a8", "roleId": "5"  },
+    { "id": "26fb573e-3b42-4fc6-aa15-d2afaca06b09", "userId": "07725ed8-20f8-4f7b-91b6-b2e63be34afc", "roleId": "5"  }
+
   ],
 
   "delivery":[
     {"id": "f6c6ee33-c805-469d-b2fe-02938b0e809e", "userId":"86404ea6-c508-4dab-b60b-0c8a652722bb" ,
     "origin":"Calle San Juan", "originLat":3.414561, "originLong":-76.503228,
     "destination": "Calle San Pedro", "destinationLat": 4.576364, "destinationLong":-74.201579, "datetime": "2023-07-14T18:25:43.511Z",
-    "statusDeliveryId": 1
+    "statusDeliveryId": "1"
     }
   ],
 
   "coordenates": [
-    { "id":1, "deliveryId": "f6c6ee33-c805-469d-b2fe-02938b0e809e", "latitude": 3.414561, "longitude":-76.503228, "datetime": "2023-07-14T18:25:43.511Z" }
+    { "id":"1", "deliveryId": "f6c6ee33-c805-469d-b2fe-02938b0e809e", "latitude": 3.414561, "longitude":-76.503228, "datetime": "2023-07-14T18:25:43.511Z" }
   ],
 
   "status-delivery": [
-    {"id":1 , "name": "Saliendo de Origen"},
-    {"id":2 , "name": "Entregado a Destino"},
-    {"id":3 , "name": "En tránsito"},
-    {"id":4 , "name": "Pendiente"}
+    {"id":"1" , "name": "Saliendo de Origen"},
+    {"id":"2" , "name": "Entregado a Destino"},
+    {"id":"3" , "name": "En tránsito"},
+    {"id":"4" , "name": "Pendiente"}
   ],
 
 

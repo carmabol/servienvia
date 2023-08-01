@@ -23,7 +23,14 @@ const routes: Routes = [
         (m) => m.SECURITY_ROUTES
       ),
   },
-  { path: '**', redirectTo: 'security', pathMatch: 'full' },
+  {
+    path: 'maps',
+    loadChildren: () =>
+      import('./components/maps/maps.routing').then(
+        (m) => m.MAPS_ROUTES
+      ),
+  },
+  { path: '**', redirectTo: 'maps', pathMatch: 'full' },
 ];
 
 @NgModule({
